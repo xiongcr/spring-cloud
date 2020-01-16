@@ -1,0 +1,17 @@
+logging:
+  level:
+    root: info
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+spring:
+    cache:
+      ehcache:
+        config: classpath:ehcache.xml
+    http:
+      encoding:
+        charset: utf-8
+        enabled: true
+        force: true

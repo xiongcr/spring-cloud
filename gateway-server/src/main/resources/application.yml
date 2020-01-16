@@ -1,0 +1,27 @@
+server:
+  port: 2104
+spring:
+  application:
+    name: gateway-server
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          # 是否和服务注册与发现组件结合，设置为 true 后可以直接使用应用名称调用服务
+          enabled: true
+      # 路由（routes：路由，它由唯一标识（ID）、目标服务地址（uri）、一组断言（predicates）和一组过滤器组成（filters）。filters 不是必需参数。）
+      routes:
+      #id：我们自定义的路由 ID，保持唯一
+      - id: path_route
+        # 目标服务地址（uri：地址，请求转发后的地址）
+        uri: http://localhost:8083
+        # 路由条件（predicates：断言，匹配 HTTP 请求内容）
+        predicates:
+        - Path=/provider/**
+        #filters：过滤规则，这里暂时没用。
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
