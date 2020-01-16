@@ -12,21 +12,23 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/provider")
 public class ProviderController {
 
-	@Value("${name}")
-	public String name;
+/*	@Value("${name}")
+	public String name;*/
 
 	@Autowired
 	public ProviderService providerService;
 
 	@GetMapping("/hello")
 	public User getUser() {
-		return providerService.getUser(1l);
+		return providerService.getUserById(1l);
 	}
+/*
 
 	@GetMapping("/name")
 	public String getName(){
 		return name;
 	}
+*/
 
 
 }

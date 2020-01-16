@@ -2,7 +2,7 @@ server:
   port: 8083
 spring:
   application:
-    name: provider-server
+    name: yuanning-server
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://203.195.161.21:3306/script?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&useSSL=false
@@ -25,24 +25,24 @@ spring:
       connection-timeout: 30000
       connection-test-query: SELECT 1
       validation-timeout: 3000
-  jpa:
-    database: MySQL
-    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
-    show-sql: true
-    hibernate:
-      ddl-auto: none
   jackson:
     date-format: "yyyy-MM-dd HH:mm:ss" #全局配置返回的时间格式
     time-zone: "GMT+8"
+
+
+mybatis:
+  mapper-locations: classpath:mapping/*Mapper.xml
+  type-aliases-package: com.teligen.model
+
 #自定义配置属性
 token:
   close: true #是否开启token验证，0：关闭，1：
 
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
-  instance:
-    prefer-ip-address: true
-    #服务注册信息         服务名                          服务所在ip               服务端口
-    instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8761/eureka/
+#  instance:
+#    prefer-ip-address: true
+#    #服务注册信息         服务名                          服务所在ip               服务端口
+#    instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}
