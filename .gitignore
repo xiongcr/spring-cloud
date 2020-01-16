@@ -1,7 +1,7 @@
 # Compiled class file
 *.class
 ##ignore this file##
-/target/
+target
 .idea
 
 # Log file
