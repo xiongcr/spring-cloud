@@ -2,7 +2,7 @@
 *.class
 ##ignore this file##
 /target/
-/.idea/*
+.idea
 
 # Log file
 *.log
