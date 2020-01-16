@@ -1,26 +1,19 @@
-package com.teligen.eureka_client;
+package com.teligen;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 
 /**
  * Eureka客户端示列
- * 
- * @author yinjihuan
- * 
- * @about http://cxytiandi.com/about
- * 
- * @date 2018-12-22
- * 
  */
 @EnableDiscoveryClient
 @SpringBootApplication
-@EnableFeignClients
-public class ConsumerApp {
+@EnableTransactionManagement
+public class ProviderApp {
 	public static void main(String[] args) {
-		SpringApplication.run(ConsumerApp.class, args);
+		SpringApplication.run(ProviderApp.class, args);
 	}
 }

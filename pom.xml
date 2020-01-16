@@ -16,6 +16,7 @@
         <module>config-server</module>
         <module>testdb</module>
         <module>xcrdb</module>
+        <module>yuanning-server</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

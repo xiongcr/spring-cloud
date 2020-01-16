@@ -1,4 +1,4 @@
-package com.cxytiandi.spring_cloud_gateway;
+package com.teligen.spring_cloud_gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

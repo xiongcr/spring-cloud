@@ -1,4 +1,4 @@
-package com.cxytiandi.eureka_client;
+package com.teligen.eureka_client;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;

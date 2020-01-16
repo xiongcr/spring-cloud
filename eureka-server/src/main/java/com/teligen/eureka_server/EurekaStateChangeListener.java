@@ -1,4 +1,4 @@
-package com.cxytiandi.eureka_server;
+package com.teligen.eureka_server;
 
 import org.springframework.cloud.netflix.eureka.server.event.EurekaInstanceCanceledEvent;
 import org.springframework.cloud.netflix.eureka.server.event.EurekaInstanceRegisteredEvent;

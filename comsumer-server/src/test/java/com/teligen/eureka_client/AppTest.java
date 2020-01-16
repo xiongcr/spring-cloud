@@ -1,4 +1,4 @@
-package com.cxytiandi.eureka_server;
+package com.teligen.eureka_client;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
@@ -7,7 +7,7 @@ import junit.framework.TestSuite;
 /**
  * Unit test for simple App.
  */
-public class EurekaServerApplicationTest 
+public class AppTest 
     extends TestCase
 {
     /**
@@ -15,7 +15,7 @@ public class EurekaServerApplicationTest
      *
      * @param testName name of the test case
      */
-    public EurekaServerApplicationTest( String testName )
+    public AppTest( String testName )
     {
         super( testName );
     }
@@ -25,7 +25,7 @@ public class EurekaServerApplicationTest
      */
     public static Test suite()
     {
-        return new TestSuite( EurekaServerApplicationTest.class );
+        return new TestSuite( AppTest.class );
     }
 
     /**
