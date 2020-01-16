@@ -11,7 +11,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * 
  * @author yinjihuan
  * 
- * @about http://cxytiandi.com/about
+ * @about http://teligen.com/about
  * 
  * @date 2018-12-22
  * 
