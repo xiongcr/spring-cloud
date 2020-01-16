@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.teligen.dao.UserMapper">
+
+    <resultMap id="BaseResultMap" type="com.teligen.model.User">
+        <result column="id" jdbcType="BIGINT" property="id" />
+        <result column="userName" jdbcType="VARCHAR" property="userName" />
+        <result column="passWord" jdbcType="VARCHAR" property="passWord" />
+    </resultMap>
+
+    <select id="getUserById" resultType="com.teligen.model.User">
+        select * from user where id = #{id}
+    </select>
+
+</mapper>

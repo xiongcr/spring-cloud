@@ -1,0 +1,48 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: general-server
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://203.195.161.21:3306/script?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&useSSL=false
+    username: root
+    password: 185300
+    hikari:
+      # 最小空闲连接数量
+      minimum-idle: 10
+      # 空闲连接存活最大时间，默认600000（10分钟）
+      idle-timeout: 60000
+      # 连接池最大连接数，默认是10
+      maximum-pool-size: 50
+      # 此属性控制从池返回的连接的默认自动提交行为,默认值：true
+      auto-commit: true
+      # 连接池名称
+      pool-name: MyHikariCP
+      # 此属性控制池中连接的最长生命周期，值0表示无限生命周期，默认1800000即30分钟
+      max-lifetime: 60000
+      # 数据库连接超时时间,默认30秒，即30000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+      validation-timeout: 3000
+  jackson:
+    date-format: "yyyy-MM-dd HH:mm:ss" #全局配置返回的时间格式
+    time-zone: "GMT+8"
+
+
+#mybatis:
+#  mapper-locations: classpath:mapping/*Mapper.xml
+#  type-aliases-package: com.teligen.model
+
+#自定义配置属性
+token:
+  close: true #是否开启token验证，0：关闭，1：
+
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8761/eureka/
+#  instance:
+#    prefer-ip-address: true
+#    #服务注册信息         服务名                          服务所在ip               服务端口
+#    instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}
