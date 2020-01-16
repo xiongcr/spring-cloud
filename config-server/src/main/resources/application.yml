@@ -1,0 +1,21 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:properties/
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    #服务注册信息         服务名                          服务所在ip               服务端口
+    instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}
