@@ -1,26 +1,25 @@
 package com.teligen.controller;
 
 import com.teligen.model.User;
-import com.teligen.service.ProviderService;
+import com.teligen.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/provider")
-public class ProviderController {
+public class UserController {
 
 /*	@Value("${name}")
 	public String name;*/
 
 	@Autowired
-	public ProviderService providerService;
+	public UserService userService;
 
 	@GetMapping("/hello")
 	public User getUser() {
-		return providerService.getUserById(1l);
+		return userService.getUserById(1l);
 	}
 /*
 

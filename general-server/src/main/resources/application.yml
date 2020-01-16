@@ -2,7 +2,7 @@ server:
   port: 8083
 spring:
   application:
-    name: yuanning-server
+    name: general-server
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://203.195.161.21:3306/script?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&useSSL=false

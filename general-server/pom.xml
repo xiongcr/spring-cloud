@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>provider-server</artifactId>
+    <artifactId>general-server</artifactId>
 
     <dependencies>
         <dependency>
@@ -17,18 +17,18 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-<!--        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-config</artifactId>
-        </dependency>-->
-<!--        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>-->
+        <!--        <dependency>
+                    <groupId>org.springframework.cloud</groupId>
+                    <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+                </dependency>
+                <dependency>
+                    <groupId>org.springframework.cloud</groupId>
+                    <artifactId>spring-cloud-starter-config</artifactId>
+                </dependency>-->
+        <!--        <dependency>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-data-jpa</artifactId>
+                </dependency>-->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
@@ -96,13 +96,13 @@
             <version>2.8.6</version>
         </dependency>
 
-<!--        <dependency>
-            <groupId>com.teligen</groupId>
-            <artifactId>springcloud-learn</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/resources/lib/core-2.1.jar</systemPath>
-        </dependency>-->
+        <!--        <dependency>
+                    <groupId>com.teligen</groupId>
+                    <artifactId>springcloud-learn</artifactId>
+                    <version>1.0-SNAPSHOT</version>
+                    <scope>system</scope>
+                    <systemPath>${project.basedir}/src/main/resources/lib/core-2.1.jar</systemPath>
+                </dependency>-->
     </dependencies>
 
     <build>
@@ -118,4 +118,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
