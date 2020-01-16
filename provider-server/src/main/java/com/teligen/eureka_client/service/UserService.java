@@ -1,5 +1,7 @@
 package com.teligen.eureka_client.service;
-import com.xcr.test.pojo.User;
+
+
+import com.teligen.mybatis.pojo.User;
 
 import java.util.List;
 

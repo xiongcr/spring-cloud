@@ -1,8 +1,9 @@
 package com.teligen.eureka_client.service.impl;
 
 import com.teligen.eureka_client.service.UserService;
-import com.xcr.test.mapper.UserMapper;
-import com.xcr.test.pojo.User;
+
+import com.teligen.mybatis.mapper.UserMapper;
+import com.teligen.mybatis.pojo.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
