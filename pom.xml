@@ -19,6 +19,7 @@
         <module>common-exception</module>
         <module>general-server</module>
         <module>user-db</module>
+        <module>websocket-server</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
