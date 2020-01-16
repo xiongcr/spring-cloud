@@ -1,4 +1,4 @@
-package com.cxytiandi.eureka_client;
+package com.teligen.eureka_client;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
@@ -11,7 +11,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * 
  * @author yinjihuan
  * 
- * @about http://cxytiandi.com/about
+ * @about http://teligen.com/about
  * 
  * @date 2018-12-22
  * 

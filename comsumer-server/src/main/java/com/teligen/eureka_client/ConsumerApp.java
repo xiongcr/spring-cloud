@@ -1,4 +1,4 @@
-package com.cxytiandi.eureka_client;
+package com.teligen.eureka_client;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,7 +11,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * 
  * @author yinjihuan
  * 
- * @about http://cxytiandi.com/about
+ * @about http://teligen.com/about
  * 
  * @date 2018-12-22
  * 

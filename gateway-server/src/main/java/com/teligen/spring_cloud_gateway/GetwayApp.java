@@ -1,4 +1,4 @@
-package com.cxytiandi.spring_cloud_gateway;
+package com.teligen.spring_cloud_gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * 
  * @author yinjihuan
  * 
- * @about http://cxytiandi.com/about
+ * @about http://teligen.com/about
  * 
  * @date 2018-12-19
  * 

@@ -1,4 +1,4 @@
-package com.cxytiandi.eureka_server;
+package com.teligen.eureka_server;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

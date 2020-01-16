@@ -1,4 +1,4 @@
-package com.cxytiandi.eureka_server;
+package com.teligen.eureka_server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.cxytiandi.eureka_client.service;
+package com.teligen.eureka_client.service;
 
 import org.springframework.stereotype.Component;
 
