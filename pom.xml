@@ -14,10 +14,8 @@
         <module>provider-server</module>
         <module>comsumer-server</module>
         <module>config-server</module>
-        <module>testdb</module>
-        <module>xcrdb</module>
-        <module>common-exception</module>
-        <module>general-server</module>
+        <module>common-model</module>
+        <module>user-server</module>
         <module>user-db</module>
         <module>websocket-server</module>
     </modules>
