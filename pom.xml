@@ -18,6 +18,7 @@
         <module>user-server</module>
         <module>user-db</module>
         <module>websocket-server</module>
+        <module>swagger-demo</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
